@@ -25,12 +25,6 @@ struct SearchCardView: View {
                     Text(displayedProgram.name)
                         .font(.system(size:20))
                         .padding(.trailing, 5)
-//                    if displayedProgram.verified {
-//                        Image(systemName: "checkmark.circle")
-//                            .font(.system(size: 30, weight:.bold))
-//                            .foregroundColor(.green)
-//                            .padding(.bottom, 8)
-                        
                     Spacer()
                 }
                 .frame(maxWidth:300, maxHeight:20)
@@ -54,10 +48,16 @@ struct SearchCardView: View {
                         .bold()
                         .font(.system(size: 24))
                     Spacer()
+                    if (currentUser.savedPrograms.contains(displayedProgram.id)) {
                         Image(systemName:"bookmark.fill")
                             .foregroundColor(.blue)
                             .font(.system(size:24))
-                    
+                    }
+                    else {
+                        Image(systemName: "bookmark")
+                            .foregroundColor(.blue)
+                            .font(.system(size:24))
+                    }
                 }
                 .padding(.all, 8.0)
                 .frame(maxWidth:300)
