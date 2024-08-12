@@ -28,7 +28,7 @@ struct ProgramView: View {
                     
                     VStack {
                         HStack {
-                            Image("Placeholder")
+                            Image(displayedProgram.imageName)
                                 .resizable()
                                 .frame(width: 300, height: 200)
                         }

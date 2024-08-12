@@ -12,10 +12,27 @@ struct TagListView: View {
     var body: some View {
         ZStack {
             Rectangle()
+                .fill(usedTag.getTypeColor())
+                .frame(width:UIScreen.main.bounds.width - 20, height:50)
+            HStack {
+                Text(usedTag.name)
+                    .foregroundColor(.white)
+                    .font(.system(size:20))
+                    .padding(.leading, 10)
+                Spacer()
+                Image(systemName:"minus.circle")
+                    .foregroundColor(.white)
+                    .font(.system(size:20))
+                    .padding(.trailing, 10)
+            }
         }
     }
 }
 
 #Preview {
-    TagListView(usedTag: technologyTag)
+    List {
+        TagListView(usedTag: technologyTag)
+        TagListView(usedTag: paidTag)
+    }
+    
 }

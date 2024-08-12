@@ -31,7 +31,6 @@ struct ProgramRecommendedView: View {
 #Preview {
     VStack {
         ProgramRecommendedView(program1: ECCChicago, program2: afterSchoolMatters)
-        ProgramRecommendedView(program1: cyberSecurityProgram, program2: webDevProgram)
     }
     
 }

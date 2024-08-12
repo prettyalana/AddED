@@ -10,13 +10,15 @@ import SwiftUI
 struct TagRectangleView: View {
     @State var displayTag: Tag
     @State var removable: Bool
-    @State var itemTagged: Program = ECCChicago
+    @State var itemTagged: Program = ECCChicago //Initialize with default
     var body: some View {
         if removable {
             HStack {
                 HStack {
                     Text(displayTag.name)
-                    Image(systemName:"x.circle")
+                    Button(action:{itemTagged.removeTag(inputTag: displayTag)}) {
+                        Image(systemName:"x.circle")
+                    }
                 }
                 .padding(6.0)
                 .background(displayTag.getTypeColor())

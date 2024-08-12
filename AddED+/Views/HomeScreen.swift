@@ -48,7 +48,7 @@ struct HomeScreen: View {
                 .background(.white)
                 .cornerRadius(8)
                 
-                //Scroll through all featured programs (currently hardcoded)
+                //Scroll through all featured programs
                 ScrollView(.horizontal) {
                     HStack {
                         ForEach(placeholderFeaturedPrograms) {
