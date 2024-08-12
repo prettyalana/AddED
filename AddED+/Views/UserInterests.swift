@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import WrappingHStack
+//import WrappingHStack
 
 struct UserInterests: View {
     var tags: [Tag] = placeholderTags
@@ -35,11 +35,18 @@ struct UserInterests: View {
                 .background(.white)
                 .cornerRadius(8)
                 ZStack {
-                    WrappingHStack {
-                        ForEach(tags) { tag in
-                            TagRectangleView(displayTag: tag, removable: true)
-                                .fixedSize()
+                    ScrollView(.horizontal) {
+                        LazyVGrid(columns: [
+                            .init(.fixed(160), spacing: 60),
+                            .init(.adaptive(
+                                minimum: 60), spacing: 78)
+                        ]) {
+                            ForEach(tags) { tag in
+                                TagRectangleView(displayTag: tag, removable: true)
+                                    .fixedSize()
+                            }
                         }
+                        .padding(16)
                     }
                 }
                 .frame(width: UIScreen.main.bounds.width-20, height: 250, alignment: .topLeading)

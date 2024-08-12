@@ -56,15 +56,7 @@ struct SearchView: View {
                         .padding()
                     }
                 }
-//                VStack(alignment:.leading) {
-//                    
-//                    Text("Filters")
-//                        .bold()
-//                }
-//                
                 ScrollView {
-                    //                    SearchCardView(displayedProgram: ECCChicago  , areTagsRemovable: false,  paddingAmount: 10)
-                    
                     ForEach(searchResults) { program in
                         SearchCardView(displayedProgram: program, areTagsRemovable: false,  paddingAmount: 10)
                     }

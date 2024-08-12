@@ -36,8 +36,8 @@ struct SearchCardView: View {
                         }
                     }
                 }
-                .padding(.trailing, 50)
-                .frame(maxWidth:300, maxHeight: 20)
+                .padding(.leading, 25)
+                .frame(maxWidth:350, maxHeight: 20)
                 HStack {
                     Image(systemName:"star.fill")
                         .frame(alignment:.trailing)
