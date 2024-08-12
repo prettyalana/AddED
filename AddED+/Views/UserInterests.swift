@@ -12,7 +12,7 @@ struct UserInterests: View {
     var tags: [Tag] = placeholderTags
     var inputTags: [Tag] = inputTag
     @State private var totalHeight
-              = CGFloat.zero
+    = CGFloat.zero
     
     var body: some View {
         VStack {
@@ -37,9 +37,9 @@ struct UserInterests: View {
                 ZStack {
                     ScrollView(.horizontal) {
                         LazyVGrid(columns: [
-                            .init(.fixed(160), spacing: 60),
+                            .init(.fixed(120), spacing: 90),
                             .init(.adaptive(
-                                minimum: 60), spacing: 78)
+                                minimum: 40), spacing: 60)
                         ]) {
                             ForEach(tags) { tag in
                                 TagRectangleView(displayTag: tag, removable: true)
