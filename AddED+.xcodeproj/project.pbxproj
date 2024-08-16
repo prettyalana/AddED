@@ -15,6 +15,7 @@
 		E754E0B12C4EEAB200D526A1 /* ProgramName.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754E0B02C4EEAB200D526A1 /* ProgramName.swift */; };
 		E754E0B32C4EEADB00D526A1 /* ProgramInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754E0B22C4EEADB00D526A1 /* ProgramInfo.swift */; };
 		E754E0B52C4EEB0800D526A1 /* AddProgramPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754E0B42C4EEB0700D526A1 /* AddProgramPage.swift */; };
+		E768B4262C5818B400270BB4 /* SearchCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E768B4252C5818B400270BB4 /* SearchCardView.swift */; };
 		E7BD348E2C4106FB00BDA300 /* AddED_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BD348D2C4106FB00BDA300 /* AddED_App.swift */; };
 		E7BD34902C4106FB00BDA300 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BD348F2C4106FB00BDA300 /* ContentView.swift */; };
 		E7BD34922C4106FD00BDA300 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7BD34912C4106FD00BDA300 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		E754E0B02C4EEAB200D526A1 /* ProgramName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramName.swift; sourceTree = "<group>"; };
 		E754E0B22C4EEADB00D526A1 /* ProgramInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramInfo.swift; sourceTree = "<group>"; };
 		E754E0B42C4EEB0700D526A1 /* AddProgramPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProgramPage.swift; sourceTree = "<group>"; };
+		E768B4252C5818B400270BB4 /* SearchCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCardView.swift; sourceTree = "<group>"; };
 		E7BD348A2C4106FB00BDA300 /* AddED+.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AddED+.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7BD348D2C4106FB00BDA300 /* AddED_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddED_App.swift; sourceTree = "<group>"; };
 		E7BD348F2C4106FB00BDA300 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				E754E0B22C4EEADB00D526A1 /* ProgramInfo.swift */,
 				F0A9CB3F2C49B095004B509A /* RatingStarsView.swift */,
 				F0A9CB352C49A309004B509A /* ProgramCardView.swift */,
+				E768B4252C5818B400270BB4 /* SearchCardView.swift */,
 				F0A9CB372C49A314004B509A /* TagRectangleView.swift */,
 				F63775632C51A55700491F55 /* TagListView.swift */,
 				E7DA68442C49C464000C7486 /* TabBar.swift */,
@@ -226,6 +229,7 @@
 				F0A9CB342C49A1CC004B509A /* ProgramModel.swift in Sources */,
 				E754E0B32C4EEADB00D526A1 /* ProgramInfo.swift in Sources */,
 				F63377762C50A7E70024D2BD /* ProgramRecommendedView.swift in Sources */,
+				E768B4262C5818B400270BB4 /* SearchCardView.swift in Sources */,
 				F63775642C51A55700491F55 /* TagListView.swift in Sources */,
 				F0A9CB402C49B095004B509A /* RatingStarsView.swift in Sources */,
 				F0A9CB3A2C49A3FD004B509A /* ProgramView.swift in Sources */,

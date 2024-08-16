@@ -85,7 +85,7 @@ extension HomeScreen {
             ForEach(0..<(placeholderPrograms.count)/2, id:\.self) { i in
                 ProgramRecommendedView(program1: placeholderPrograms[i*2], program2: placeholderPrograms[i*2+1])
             }
-                
+            
         }
     }
 }

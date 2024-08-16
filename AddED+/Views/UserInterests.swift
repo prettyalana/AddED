@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
-import WrappingHStack
+//import WrappingHStack
 
 struct UserInterests: View {
     var tags: [Tag] = placeholderTags
     var inputTags: [Tag] = inputTag
-    //    @State var addedTag: Bool
+    @State private var totalHeight
+    = CGFloat.zero
     
     var body: some View {
         VStack {
@@ -34,12 +35,18 @@ struct UserInterests: View {
                 .background(.white)
                 .cornerRadius(8)
                 ZStack {
-                    ScrollView() {
-                        VStack(spacing: 0) {
+                    ScrollView(.horizontal) {
+                        LazyVGrid(columns: [
+                            .init(.fixed(120), spacing: 90),
+                            .init(.adaptive(
+                                minimum: 40), spacing: 60)
+                        ]) {
                             ForEach(tags) { tag in
-                                TagListView(usedTag: tag)
+                                TagRectangleView(displayTag: tag, removable: true)
+                                    .fixedSize()
                             }
                         }
+                        .padding(16)
                     }
                 }
                 .frame(width: UIScreen.main.bounds.width-20, height: 250, alignment: .topLeading)
@@ -57,7 +64,7 @@ struct UserInterests: View {
                 ZStack {
                     Rectangle()
                         .fill(.addED)
-                        .frame(width:200, height: 80)
+                        .frame(width:200, height: 70)
                         .cornerRadius(8)
                     Text("Next")
                         .foregroundColor(.white)
@@ -73,10 +80,3 @@ struct UserInterests: View {
 #Preview {
     UserInterests()
 }
-
-//            if !addedTag {
-//                  forEach(inputTags) {
-// tag in
-//TagRectangleView(displayTag: tag, removable: true)
-// }
-//            }
